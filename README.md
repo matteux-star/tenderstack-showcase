@@ -1,3 +1,5 @@
+<img width="1024" height="304" alt="Tenderstack" src="banner.png" />
+
 # Tenderstack
 
 A multi-agent framework for producing tender, RFP, and ITT responses from a firm's own bid library. Thirteen specialist agents across five teams coordinate to ingest historic bids, research buyers and competitors, draft submission-ready responses, and learn from every outcome. All of it runs inside an agentic coding CLI (Claude Code, Codex, or similar) rather than as a standalone SaaS product.
