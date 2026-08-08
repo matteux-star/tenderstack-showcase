@@ -1,6 +1,4 @@
-<img width="1024" height="207" alt="Open Tender Agents" src="https://github.com/user-attachments/assets/eff9e285-66c4-417b-a770-71f56038f4aa" />
-
-# Open Tender Agents
+# Tenderstack
 
 A multi-agent framework for producing tender, RFP, and ITT responses from a firm's own bid library. Thirteen specialist agents across five teams coordinate to ingest historic bids, research buyers and competitors, draft submission-ready responses, and learn from every outcome. All of it runs inside an agentic coding CLI (Claude Code, Codex, or similar) rather than as a standalone SaaS product.
 
@@ -189,7 +187,7 @@ python runtime/cli.py <subcommand> --help    # lists arguments for any subcomman
 
 ### Database Schema
 
-16 SQLite tables, each owned by a specific agent:
+17 SQLite tables, each owned by a specific agent:
 
 | Table | Owned By | Purpose |
 |-------|----------|---------|
@@ -226,7 +224,7 @@ Same format: YAML frontmatter, markdown body, and `[[wikilinks]]`. Same Obsidian
 ## Repository Layout
 
 ```
-open-tender-agents/
+tenderstack/
 ├── agents/                          Tool-agnostic persona definitions (source of truth)
 │   ├── bid_team/                    document-controller, rfp-analyst, bid-writer,
 │   │                                  bid-manager, technical-solutions-architect,
@@ -246,7 +244,7 @@ open-tender-agents/
 │   ├── docx_export.py               Markdown → .docx
 │   └── requirements.txt             Python dependencies
 ├── db/
-│   ├── schema.sql                   16 tables, indexes, CHECK constraints
+│   ├── schema.sql                   17 tables, indexes, CHECK constraints
 │   ├── config.yaml                  vault/db path configuration
 │   └── init_db.py                   Safe init (refuses to overwrite existing DB)
 ├── vault/                           Obsidian markdown knowledge base
